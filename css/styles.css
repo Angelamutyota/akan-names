@@ -4,3 +4,7 @@
 .description {
     text-align: center;
 }
+body {
+    background-image: url("images/otherbackground.jpg");
+    background-color: cornsilkg;
+}
