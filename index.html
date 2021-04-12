@@ -15,16 +15,18 @@
 <P><strong>fill in your birth date details here:</strong></P>
 
 <form action="/action_page.php">
-  <label for="day">dd:</label><br>
-  <input type="number" id="date" name="date"><br>
-  <label for="day">mm:</label><br>
-  <input type="number" id="date" name="date"><br>
-  <label for="month">yy:</label><br>
-  <input type="number" id="date" name="date"><br><br>
+  <label for="century">dd:</label><br>
+  <input type="number" id="century" name="century"><br>
+  <label for="year">mm:</label><br>
+  <input type="number" id="year" name="year"><br>
+  <label for="month">yy:(last two digits of birth-year)</label><br>
+  <input type="number" id="month" name="month"><br>
+  <label for="day">cc:(first two digits of birth-year)</label><br>
+  <input type="number" id="day" name="day"><br><br>
   <label for="gender">Choose gender:</label>
   <select id="gender" name="gender" size="2">
-    <option value="male">male</option>
-    <option value="female">female</option>
+    <option class="allmale" value="male">male</option>
+    <option class="all female" value="female">female</option>
   </select><br><br>
   <input type="submit" value="Submit">
 </form>
