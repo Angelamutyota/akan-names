@@ -1,4 +1,4 @@
-function akanName() {
+function akanName(); {
     var cc = document.getElementById('century').nodeValue;
     var yy = document.getElementById('year').nodeValue;
     var mm = document.getElementById('month').nodeValue;
