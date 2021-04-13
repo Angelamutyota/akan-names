@@ -1,14 +1,16 @@
 .header {
     text-align: center;
-    background-color: lightgreen;
+    background-color: rgb(180, 158, 178);
+    margin-bottom: 50px;
+    height: 50px;
 }
 .description {
     text-align: center;
     font-size: larger;
     font-style: oblique;
+    margin-bottom: 50px;
 }
 body {
-    background-image: url("images/otherbackground.jpg");
     background-color: cornsilk;
 }
 .details{
@@ -19,4 +21,5 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 20%;
+    
   }
