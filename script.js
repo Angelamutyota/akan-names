@@ -23,9 +23,9 @@ function getAkanName(){
     }
 
     if (gender == "male") {
-         document.getElementById("displayAkanName").innerHTML = "your Akan name is" + maleNames[answer];
+         document.getElementById("result").innerHTML = "your Akan name is" + maleNames[answer];
     }
      else if (gender == "female") {
-        document.getElementById("displayAkanName").innerHTML = "your Akan name is" + femaleNames[answer];
+        document.getElementById("result").innerHTML = "your Akan name is" + femaleNames[answer];
    }
 }
