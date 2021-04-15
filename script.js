@@ -1,14 +1,16 @@
-function getAkanName(){
+document.getElementById('my form');
+addEventListener('submit',getAkanName)
+function getAkanName(event){ 
+    event.preventDefault() 
     let year = parseInt(document.getElementById("year").value);
     let month = parseInt(document.getElementById("month").value);
     let day = parseInt(document.getElementById("day").value);
     let dateOfBirth = new Date(year + "/" + month + "/" + day);
+    console.log('angela')
     let answer = dateOfBirth.getDay();
     let output = document.getElementById("displayAkanName");
-    let gender = document.getElementById("gender");
-    let male = document.getElementById("male");
-    let female = document.getElementById("female");
-
+    let gender = document.getElementById("gender").value;
+   console.log(year, month, day)
     const days = ["Sunday", "Monday", "Tusday", "Wednesday", "Thursday", "Friday", "Saturday"]
     const maleNames = ["kwasi", "Kwado", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
     const femaleNames = ["Akosua", "Adwoa", "Abenna", "Akua", "Yaa", "Afua", "Ama"]
@@ -23,9 +25,9 @@ function getAkanName(){
     }
 
     if (gender == "male") {
-         document.getElementById("result").innerHTML = "your Akan name is" + maleNames[answer];
+         document.getElementById("result").innerHTML = "your Akan name is" + "," + maleNames[answer];
     }
      else if (gender == "female") {
-        document.getElementById("result").innerHTML = "your Akan name is" + femaleNames[answer];
+        document.getElementById("result").innerHTML = "your Akan name is" + "," + femaleNames[answer];
    }
 }
